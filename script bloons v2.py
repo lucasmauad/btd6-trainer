@@ -1,27 +1,9 @@
 import pyautogui as pg
 import time as t
 import keyboard as k
+from coords import *
 
 f12_pressed = False
-posi_inicial = [870, 925]
-seta_de_voltar_os_mapas = [270, 425] 
-map = [1408, 617] 
-facil = [662, 408] 
-deflation = [1265, 445] 
-ok = [964, 755] 
-village = [1582, 651] 
-upgrade_100 = [324, 494]
-upgrade_001 = [324, 808] 
-upgrade_010 = [324, 665]
-up_100L = [1552, 490]
-up_010L = [1547, 632]
-up_001L = [1545, 779]
-sniper = [1533, 583]
-alch = [1605, 562]
-proxima = [985, 915]
-home = [712, 871]
-bot_mira = [1425, 370]
-
 
 def quebra():
     """Interrompe o processo e retorna à tela inicial."""
@@ -188,11 +170,11 @@ def main_loop(up = 0):
             t.sleep(0.5)
             pg.click(ok)
             i += 1
-            if k.read_key == 'f8': #Sai do loop e da função
+            if k.is_pressed('f8'): #Sai do loop e da função
                 quebra()
                 f12_pressed = False
                 return  
-            if k.read_key == 'f7': #Para o loop sem sair do mapa
+            if k.is_pressed('f7'): #Para o loop sem sair do mapa
                 f12_pressed = False
                 return
 
