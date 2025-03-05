@@ -28,6 +28,7 @@ def main_loop(up = 0):
     """Executa a automação do jogo até que seja interrompida."""
     global f12_pressed  # Permite modificar a variável global
     games = 0
+    
     while f12_pressed:
         i = 0
 
