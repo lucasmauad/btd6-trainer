@@ -1,4 +1,9 @@
-def up_tower(b):
+import pyautogui as pg
+import time as t
+import keyboard as k
+from coords import *
+
+def up_tower(b=0):
     """Caso queira upar um boneco muda aqui"""
     match b:
         case 1: #dart monkey
