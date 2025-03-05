@@ -1,12 +1,17 @@
-def up_tower(b):
+import pyautogui as pg
+import time as t
+import keyboard as k
+from coords import *
+
+def up_tower(b=0):
     """Caso queira upar um boneco muda aqui"""
     match b:
         case 1: #dart monkey
-            pg.click([832, 380])
+            pg.click(tower_pos)
             k.press_and_release('q')
             t.sleep(0.4)
             for i in range(2):
-                pg.click([832, 380])
+                pg.click(tower_pos)
                 t.sleep(0.4)
                 
             for i in range(4): 
@@ -18,11 +23,11 @@ def up_tower(b):
                 t.sleep(0.1)
                 
         case 2: #dartling gunner
-            pg.click([832, 380])
+            pg.click(tower_pos)
             k.press_and_release('m')
             t.sleep(0.4)
             for i in range(2):
-                pg.click([832, 380])
+                pg.click(tower_pos)
                 t.sleep(0.3)
             
             for i in range(2):
@@ -44,11 +49,11 @@ def up_tower(b):
             t.sleep(0.3)
         
         case 3:#ice monkey
-            pg.click([832, 380])
+            pg.click(tower_pos)
             k.press_and_release('t')
             t.sleep(0.4)
             for i in range(2):
-                pg.click([832, 380])
+                pg.click(tower_pos)
                 t.sleep(0.4)
                 
             for i in range(4): 
