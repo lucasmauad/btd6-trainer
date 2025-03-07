@@ -140,4 +140,4 @@ def start_bot(up = 0):
             print(pg.position())
                
 
-start_bot(5)
+start_bot(6)
