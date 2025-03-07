@@ -34,10 +34,8 @@ def main_loop(up = 0):
 
         pg.click(posi_inicial)
         t.sleep(1)
-        for _ in range(2):
-            pg.click(seta_de_voltar_os_mapas)
-            t.sleep(1)
-
+        pg.click(expert)
+        t.sleep(1)
         pg.click(map)
         t.sleep(1)
         pg.click(facil)
@@ -59,6 +57,8 @@ def main_loop(up = 0):
         for _ in range(2):
             pg.click(upgrade_100)
             t.sleep(0.1)
+        
+        for _ in range(2):
             pg.click(upgrade_001)
             t.sleep(0.1)
 
