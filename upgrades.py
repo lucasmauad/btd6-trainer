@@ -65,11 +65,11 @@ def up_tower(b=0):
                 t.sleep(0.1)
             
         case 4: #mortar monkey
-            pg.click(mortar_pos)
+            pg.click(tower_pos2)
             k.press_and_release('n')
             t.sleep(0.4)
             for i in range(2):
-                pg.click(mortar_pos)
+                pg.click(tower_pos2)
                 t.sleep(0.4)
                 
             for i in range(3): 
@@ -81,11 +81,11 @@ def up_tower(b=0):
                 t.sleep(0.1)
                 
         case 5: #beast handler
-            pg.click(mortar_pos)
+            pg.click(tower_pos2)
             k.press_and_release('i')
             t.sleep(0.4)
             for i in range(2):
-                pg.click(mortar_pos)
+                pg.click(tower_pos2)
                 t.sleep(0.4)
                 
             for i in range(4): 
@@ -94,6 +94,22 @@ def up_tower(b=0):
             
             for i in range(2):
                 pg.click(upgrade_010)
+                t.sleep(0.1)
+                
+        case 6: #monkey ace
+            pg.click(tower_pos3)
+            k.press_and_release('v')
+            t.sleep(0.4)
+            for i in range(2):
+                pg.click(tower_pos3)
+                t.sleep(0.4)
+                
+            for i in range(3): 
+                pg.click(upgrade_001)
+                t.sleep(0.1)
+            
+            for i in range(2):
+                pg.click(upgrade_100)
                 t.sleep(0.1)
                 
         case _:

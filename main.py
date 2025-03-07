@@ -36,10 +36,6 @@ def main_loop(up = 0):
         t.sleep(1)
         pg.click(expert)
         t.sleep(1)
-        # for _ in range(2):
-        #     pg.click(seta_de_voltar_os_mapas)
-        #     t.sleep(1)
-
         pg.click(map)
         t.sleep(1)
         pg.click(facil)
@@ -48,7 +44,6 @@ def main_loop(up = 0):
         t.sleep(3)
         pg.click(ok)
         t.sleep(0.5)
-
         pg.click(village)
         t.sleep(0.3)
         k.press_and_release('k')
@@ -138,6 +133,3 @@ def start_bot(up = 0):
             
         if k.read_key() == 'f10':
             print(pg.position())
-               
-
-start_bot(5)
