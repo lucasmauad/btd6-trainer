@@ -96,7 +96,7 @@ def up_tower(b=0):
                 pg.click(upgrade_010)
                 t.sleep(0.1)
                 
-        case 6: #monkey ace
+        case 6: #ace monkey
             pg.click(tower_pos3)
             k.press_and_release('v')
             t.sleep(0.4)
