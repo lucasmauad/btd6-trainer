@@ -134,6 +134,3 @@ def start_bot(up = 0):
             
         if k.read_key() == 'f10':
             print(pg.position())
-               
-
-start_bot(3)
