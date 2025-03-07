@@ -17,5 +17,6 @@ proxima = [985, 915]
 home = [712, 871]
 bot_mira = [1425, 370]
 tower_pos = [832, 380]
-mortar_pos = [854, 337]
+tower_pos2 = [854, 337] #mortar monkey
+tower_pos3 = [836, 330] # ace monkey
 expert = [1332, 958]
