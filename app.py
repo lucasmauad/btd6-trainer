@@ -17,14 +17,25 @@ root.title("Bloons TD6 Trainer")
 frm = ttk.Frame(root)
 frm.grid(padx=30, pady=30)
 
-ttk.Label(frm, text="Choose the tower to upgrade:").grid(column=0, row=0, pady='5')
+text1 = ttk.Label(frm, text="Choose the tower to upgrade:")
+text1.grid(column=0, row=0, pady='5')
+text2 = ttk.Label(frm, text="Press 'F12' to Start Trainer.\nPress 'F8' to Stop Trainer.\nPress 'F9' to End Trainer.")
+text2.grid(column=0, row=1, pady='5')
 
 combo_box = ttk.Combobox(frm, values = list(tower_dict.keys()), state = 'readonly')
 combo_box.set('None')
 combo_box.grid(column=2, row=0, pady='5')
 
 def start_but():
+    global text1
+    
     value = tower_dict[combo_box.get()]
+    
+    if value == 0:
+        text1.config(text='Starting without upgrading.')
+    else:
+        text1.config(text=f'Upgrading {combo_box.get()}.')
+    
     print(f'Starting with {value}')
     start_bot(value)
 
