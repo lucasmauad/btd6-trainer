@@ -8,18 +8,18 @@ def up_tower(b=0):
     match b:
         case 1: #dart monkey
             pg.click(tower_pos)
-            k.press_and_release('q')
+            k.press_and_release('l')
             t.sleep(0.4)
             for i in range(2):
                 pg.click(tower_pos)
                 t.sleep(0.4)
                 
             for i in range(4): 
-                pg.click(up_001L)
+                pg.click(up_001R)
                 t.sleep(0.1)
             
             for i in range(2):
-                pg.click(up_010L)
+                pg.click(up_010R)
                 t.sleep(0.1)
                 
         case 2: #dartling gunner
@@ -31,11 +31,11 @@ def up_tower(b=0):
                 t.sleep(0.3)
             
             for i in range(2):
-                pg.click(up_100L)
+                pg.click(up_100R)
                 t.sleep(0.1)
                 
             for i in range(2):
-                pg.click(up_010L)
+                pg.click(up_010R)
                 t.sleep(0.1)
             
             t.sleep(0.2)
@@ -57,11 +57,11 @@ def up_tower(b=0):
                 t.sleep(0.4)
                 
             for i in range(4): 
-                pg.click(up_100L)
+                pg.click(up_100R)
                 t.sleep(0.1)
             
             for i in range(2): 
-                pg.click(up_010L)
+                pg.click(up_010R)
                 t.sleep(0.1)
             
         case 4: #mortar monkey
@@ -96,7 +96,7 @@ def up_tower(b=0):
                 pg.click(upgrade_010)
                 t.sleep(0.1)
                 
-        case 6: #ace monkey
+        case 6: #monkey ace
             pg.click(tower_pos3)
             k.press_and_release('v')
             t.sleep(0.4)
@@ -112,5 +112,20 @@ def up_tower(b=0):
                 pg.click(upgrade_100)
                 t.sleep(0.1)
                 
+        case 7: #monkey sub
+            pg.click(tower_pos4)
+            k.press_and_release('x')
+            t.sleep(0.4)
+            for i in range(2):
+                pg.click(tower_pos4)
+                t.sleep(0.4)
+                
+            for i in range(4): 
+                pg.click(up_001R)
+                t.sleep(0.1)
+            
+            for i in range(2):
+                pg.click(up_010R)
+                t.sleep(0.1)
         case _:
             return

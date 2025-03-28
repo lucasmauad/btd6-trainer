@@ -113,12 +113,13 @@ def main_loop(up = 0):
                 return  
             if k.is_pressed('f7'): #Para o loop sem sair do mapa
                 f12_pressed = False
+                print('Stopping...')
                 return
 
         games += 1
         print(f"Stage cleared {games} times.")
         pg.click(proxima)
-        t.sleep(0.5)
+        t.sleep(0.8)
         pg.click(home)
         t.sleep(5)
 
@@ -134,3 +135,7 @@ def start_bot(up = 0):
             
         if k.read_key() == 'f10':
             print(pg.position())
+            
+        if k.read_key() == 'f9':
+            print("Exiting...")
+            return
